@@ -11,6 +11,9 @@ body a{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
+.container {
+	display:inline-table;
+}
 input[type="button"]{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -52,7 +55,8 @@ body{
   position: relative;
   list-style: none;
   overflow: hidden;
-  width: 100%;
+  /*width: 100%;*/
+  height:37.5em;
   padding: 0;
   margin: 0;
   }
@@ -71,9 +75,9 @@ body{
   }
 .rslides img {
   display: block;
-  height: auto;
+  /*height: auto;*/
   float: left;
-  width: 100%;
+ /* width: 100%;*/
   border: 0;
  }
 .caption{
@@ -148,7 +152,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   text-decoration: none;
   height: 61px;
   width: 38px;
-  background: transparent url("../images/themes.gif") no-repeat left top;
+  background: transparent url("../img/themes.gif") no-repeat left top;
   margin-top: -45px;
   }
 .callbacks_nav.next {
@@ -269,7 +273,8 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 /*-- sticky-nav --*/
 .fixed-header{
-	background:#543710;
+	/*background:#543710;*/
+	background: #543710 url(../img/wheat3.png) no-repeat 190%;
 	text-align: center;
 	padding: 2.5em 0;
 }
@@ -343,7 +348,8 @@ nav a:focus {
 .service-section {
   text-align: center;
   padding: 4em 0;
-  background: #948963 url(../img/pattern.png) repeat;
+  /*background: #948963 url(../img/pattern.png) repeat;*/
+ background: #948963;
 }
 .service-section h2 {
   font-size: 3em;
@@ -381,7 +387,9 @@ a.button1:hover {
 }
 .about-section {
   padding: 4em 0;
-  background: #948963 url(../img/pattern.png) repeat;
+/*  background: #948963 url(../img/pattern.png) repeat;*/
+background: #948963;
+  
  }
 .about-section h3 {
   font-size: 2.5em;
@@ -404,7 +412,7 @@ a.button1:hover {
    -moz-box-shadow: 1px 1px 2px #e6e6e6;
    box-shadow: 1px 1px 2px #e6e6e6;
    cursor: default;
-   background: #fff url(../images/bgimg.jpg) no-repeat center center;
+   background: #fff url(../img/bgimg.jpg) no-repeat center center;
      border-radius: 20px;
 }
 .view .mask,.view .content {
@@ -502,7 +510,7 @@ a.button1:hover {
   }
 .events-section {
   padding: 4em 0;
-  background: url("../images/banner1.jpg") no-repeat;
+  background: url("../img/banner1.jpg") no-repeat;
   background-size:cover;
   min-height: 500px;
 }
@@ -684,7 +692,7 @@ transition: all 0.7s ease;
 }
 .contact-section {
   padding: 4em 0;
-  background: url("../images/banner2.jpg") no-repeat;
+  background: url("../img/banner2.jpg") no-repeat;
   background-size:cover;
   min-height: 370px;
  }
@@ -754,24 +762,24 @@ transition: all 0.7s ease;
 {
 	width:70px;
 	height:70px;
-	background:url("../images/img-sprite.png") no-repeat 0px 0px;
+	background:url("../img/img-sprite.png") no-repeat 0px 0px;
 	display: inline-block;
 	margin: 0 0 0 1em;
 }
 
 .social-icons i.icon4
 {
-	background:url("../images/img-sprite.png") no-repeat 0px 0px;
+	background:url("../img/img-sprite.png") no-repeat 0px 0px;
 }
 
 .social-icons i.icon5
 {
-	background:url("../images/img-sprite.png") no-repeat -70px 0px;
+	background:url("../img/img-sprite.png") no-repeat -70px 0px;
 }
 
 .social-icons i.icon6
 {
-	background:url("../images/img-sprite.png") no-repeat -140px 0px;
+	background:url("../img/img-sprite.png") no-repeat -140px 0px;
 }
 .social-icons i:hover {
   opacity: 0.5;
@@ -804,7 +812,7 @@ transition: all 0.7s ease;
 	height: 48px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/up-arrow.png") no-repeat 0px 0px;
+	background: url("../img/up-arrow.png") no-repeat 0px 0px;
 }
 
 /*-- start-menu--*/
@@ -823,6 +831,18 @@ transition: all 0.7s ease;
 .bottom-menu {
   margin-top: 2em;
 }
+
+.logoimg {
+	float:left;
+  /*padding-left: -3em;*/
+ /*margin:.675em 0 0 5.5em;*/
+ position:absolute;
+  overflow:visible;
+  /*width: 6.75em;*/
+ height:8.25em;
+}
+
+
 /**end menu**/
 /**start-events**/
 .event-section1 {
@@ -1483,6 +1503,7 @@ span.menu {
   float:none;
   width: 100%;
   text-align:right;
+ 
 }
 .top-menu  ul{
   display:none;
@@ -1740,7 +1761,7 @@ a.button2 {
 }
 .rslides img {
   display: block;
-  height: 225px;
+  /*height: 225px;*/
  }
 .fixed-header {
   padding: 0.5em 0;
