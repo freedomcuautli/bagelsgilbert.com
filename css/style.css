@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -22,6 +21,8 @@ body a{
 }
 .container {
 	display:inline-table;
+	width: 96%;
+	margin-left:2%;
 }
 input[type="button"]{
 	transition:0.5s all;
@@ -54,7 +55,7 @@ body{
   color: #fff;
   font-weight: 900;
   text-decoration: none;
-  font-family: 'Roboto Slab', serif;
+  font-family: openSans;
   top:3.125em;
   left:130%;
 }
@@ -310,7 +311,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   text-transform: uppercase;
   margin: 0 1em;
   color: #fff;
-  font-family: 'Roboto Slab', serif;
+  font-family: openSans;
 }
 .top-menu ul li a:hover {
   color: #323232;
@@ -424,23 +425,52 @@ a.button1:hover {
 	height: 500px;
 }
 .about-section {
-  padding: 4em 0;
+	width:100%;
+	padding-left:1.325%;
+  /*padding: 4em 0;*/
 /*  background: #948963 url(../img/pattern.png) repeat;*/
 background: #948963;
-  
+  padding-bottom:2%;
  }
+ 
+ .about-section h1 {
+  font-size: 3.375em;
+  width: 52.5%;
+  /*margin: 0 auto;*/
+  color: #080700;
+  line-height: 1.375em;
+  font-weight: 600;
+  font-family: openSans;
+  margin-left:2.5%;
+  margin-top: 2%;
+}
+
 .about-section h3 {
   font-size: 2.5em;
   text-transform: uppercase;
   color: #666;
   font-weight: 600;
    margin: 0 0 1em 0.5em;
-    font-family: 'Roboto Slab', serif;
+    font-family: openSans;
 }
+
+
+.about-section p {
+  font-size: 1.25em;
+  width: 95%;
+  /*margin: 0 auto;*/
+  color: #080700;
+  line-height: 1.25em;
+  font-family: openSans;
+  margin-left:2.5%;
+}
+
+
 .view {
    width: 350px;
    height:320px;
-   margin: 10px;
+   margin-top:2.5%;
+   margin-left: 3.5%;
    float: left;
    border: 10px solid #fff;
    overflow: hidden;
@@ -450,9 +480,10 @@ background: #948963;
    -moz-box-shadow: 1px 1px 2px #e6e6e6;
    box-shadow: 1px 1px 2px #e6e6e6;
    cursor: default;
-   background: #fff url(../img/bgimg.jpg) no-repeat center center;
+   /*background: #fff url(../img/bgimg.jpg) no-repeat center center;*/
      border-radius: 20px;
 }
+
 .view .mask,.view .content {
    width: 350px;
    height: 320px;
@@ -466,24 +497,31 @@ background: #948963;
    display: block;
    position: relative;
 }
-.view h2 {
+
+.view h3 {
+   width:85%;
    text-transform: uppercase;
    color: #83580F;
-   text-align: center;
-   position: relative;
+   /*text-align: center;*/
+/*   position: relative;*/
+   padding-left: -2.5em;
    font-size: 25px;
-   padding: 10px;
-   background: rgba(0, 0, 0, 0.8);
-   margin: 20px 0 0 0;
-   font-weight: 600;
+   /*padding: -.25em;*/
+   /*background: rgba(0, 0, 0, 0.8);*/
+   /*margin: .025em 0 0 0;*/
+   /*font-weight: 600;*/
+   margin-top:5%;
 }
+
 .view p {
+  width:85%;
   font-family: Georgia, serif;
   font-style: italic;
   font-size: 20px;
   position: relative;
   color: #fff;
-  padding: 15px 20px 15px;
+/*  padding: 1.5% .025em 15px;*/
+  margin-left:.75em;
   text-align: center;
 }
 .view a.info {
@@ -507,6 +545,7 @@ background: #948963;
   width: 100%;
   height: 300px;
 }
+
 .menu-section{
    padding: 4em 0;
    background: #312D22;
@@ -517,16 +556,22 @@ background: #948963;
   color: #fff;
   font-weight: 600;
   margin: 0 0 1em 0.5em;
-    font-family: 'Roboto Slab', serif;
+  font-family: openSans;
 }
-.manu-grid {
+
+.menu-grid {
   position: relative;
+  /*margin-left:.5em;*/
+}
+.menu-grid img {
+  width:100%;
+  /*margin-left:.5em;*/
 }
 .menu-info {
 	position: absolute;
 	width: 90%;
-	top:71%;
-	left:15px;
+	top:65%;
+	left:1.5%;
 	display: none;
 	  background: rgba(0, 0, 0, 0.5);
 }
@@ -534,17 +579,21 @@ background: #948963;
   display: block;
 }
 .menu-info h4 {
-  font-size: 2.5em;
+  font-size: 2.75em;
+  font-family:openSans;
   text-align: right;
-  color:#83580F;
-  padding: 0.5em 1em 0;
-  font-weight: 600;
+  color:#f2e79b;
+  margin-top:7%;
+  padding: 0.125em .5em 0;
+  font-weight: 550;
 }
 .menu-info h5 {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fff;
-   padding: 1em 0.3em;
+  margin-left:5%;
+  padding: .65em 0.3em;
   text-transform:uppercase;
+  font-family: openSansBold;
   }
 .events-section {
   padding: 4em 0;
@@ -558,7 +607,7 @@ background: #948963;
   color: #fff;
   font-weight: 600;
   margin: 0 0 1em 0.5em;
-  font-family: 'Roboto Slab', serif;
+  font-family: openSans;
 }
 .icon {
   float: left;
@@ -644,11 +693,25 @@ a.button2 {
 }
 .test-section h3 {
   font-size: 2.5em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #fff;
   font-weight: 600;
-   margin: 0 0 1em 0.5em;
-    font-family: 'Roboto Slab', serif;
+   margin: 0 0 .25em 0.5em;
+    font-family: openSans;
+}
+.test-section h4 {
+  font-size: 2em;
+  text-align:right;
+  color: #fff;
+  margin-bottom: 1.25em;
+  margin-right:1em;
+  font-weight: 600;
+}
+
+.test-section h4 a {
+  font-size: 1em;
+  color:red;
+  margin-bottom: 0.5em;
 }
 .test-left img {
   border-radius: 2px;
@@ -662,18 +725,22 @@ a.button2 {
   margin-bottom: 0.5em;
   font-weight: 600;
 }
+
+.test-right h2 {
+    color:#fff;
+}
+.test-left01 h2 {
+    color:#fff;
+}
 .test-right p {
-  font-size: 1.2em;
+  margin-top:-1.5em;
+  font-size: 1.5em;
   color: #fff;
  }
-.test-left01 h4 {
-  font-size: 2em;
-  color: #fff;
-  margin-bottom: 0.5em;
-  font-weight: 600;
-}
+
 .test-left01 p {
-  font-size: 1.2em;
+  margin-top:-1.5em;
+  font-size: 1.5em;
   color: #fff;
 }
 
@@ -688,8 +755,8 @@ position:relative;
 overflow:hidden;
 }
 .test1 .textbox {
-  width: 443px;
-  height: 439px;
+  width: 18em;
+  height: 18.25em;
   position: absolute;
   top: -2px;
   left: 16px;
@@ -703,12 +770,18 @@ overflow:hidden;
  margin-top:0;
 }
 .textbox p{
-  padding-top: 6em;
+  padding-top: 4.5em;
   font-size: 1.5em;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
+
+.textbox img{
+  height:1.75em;
+  margin-left:27.5%;
+}
+
 .textbox h4 {
   font-size: 3em;
   text-align: center;
@@ -741,7 +814,7 @@ transition: all 0.7s ease;
   color: #fff;
   font-weight: 600;
    margin: 0 0 1em 0.5em;
-    font-family: 'Roboto Slab', serif;
+    font-family: openSans;
 }
 .contactgrid {
  padding-bottom: 2em;
@@ -865,7 +938,7 @@ transition: all 0.7s ease;
   color: #fff;
   font-weight: 600;
   margin: 0 0 1em 0.5em;
-  font-family: 'Roboto Slab', serif;
+  font-family: openSans;
 }
 .bottom-menu {
   margin-top: 2em;
@@ -895,7 +968,7 @@ transition: all 0.7s ease;
   color: #000;
   font-weight: 600;
   margin: 0 0 1em 0.5em;
-  font-family: 'Roboto Slab', serif;
+  font-family: openSans;
 }
 .event-info2 h4 {
   font-size: 1.2em;
@@ -1184,8 +1257,13 @@ a.button2 {
 .menu-section {
   padding: 3em 0;
 }
+menu-grids {
+	display:inline;
+}
+
 .menu-grid {
-  float: left;
+  float:none;
+  margin-left:10em;
   width: 25%;
 }
 .menu-info h5 {
@@ -1963,7 +2041,6 @@ a.button2 {
   overflow: hidden;
   padding: 0.5em 0 0;
 }
-=======
 /*--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -2016,7 +2093,7 @@ body{
   color: #fff;
   font-weight: 900;
   text-decoration: none;
-  font-family: 'Roboto Slab', serif;
+  font-family: openSans;
 
 }
 /*--- slider-css --*/
@@ -2263,7 +2340,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   text-transform: uppercase;
   margin: 0 1em;
   color: #fff;
-  font-family: 'Roboto Slab', serif;
+  font-family: openSans;
 }
 .top-menu ul li a:hover {
   color: #323232;
@@ -2377,7 +2454,7 @@ background: #948963;
   color: #666;
   font-weight: 600;
    margin: 0 0 1em 0.5em;
-    font-family: 'Roboto Slab', serif;
+    font-family: openSans;
 }
 .view {
    width: 350px;
@@ -2459,7 +2536,7 @@ background: #948963;
   color: #fff;
   font-weight: 600;
   margin: 0 0 1em 0.5em;
-    font-family: 'Roboto Slab', serif;
+    font-family: openSans;
 }
 .manu-grid {
   position: relative;
@@ -2500,7 +2577,7 @@ background: #948963;
   color: #fff;
   font-weight: 600;
   margin: 0 0 1em 0.5em;
-  font-family: 'Roboto Slab', serif;
+  font-family: openSans;
 }
 .icon {
   float: left;
@@ -2584,13 +2661,29 @@ a.button2 {
   background: #543710;
   padding: 4em 0;
 }
+
+.test-section.container h4 a{
+  color:#fff;
+  /*font-weight: 600;*/
+  /* margin: 0 0 1em 0.5em;*/
+    font-family: openSans;
+}
+
+.test-right h2 {
+  font-size: 2.5em;
+  color:#fff;
+  /*font-weight: 600;*/
+  /* margin: 0 0 1em 0.5em;*/
+    font-family: openSans;
+}
+
 .test-section h3 {
   font-size: 2.5em;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   color: #fff;
   font-weight: 600;
    margin: 0 0 1em 0.5em;
-    font-family: 'Roboto Slab', serif;
+    font-family: openSans;
 }
 .test-left img {
   border-radius: 2px;
@@ -2682,7 +2775,7 @@ transition: all 0.7s ease;
   color: #fff;
   font-weight: 600;
    margin: 0 0 1em 0.5em;
-    font-family: 'Roboto Slab', serif;
+    font-family: openSans;
 }
 .contactgrid {
  padding-bottom: 2em;
@@ -2806,7 +2899,7 @@ transition: all 0.7s ease;
   color: #fff;
   font-weight: 600;
   margin: 0 0 1em 0.5em;
-  font-family: 'Roboto Slab', serif;
+  font-family: openSans;
 }
 .bottom-menu {
   margin-top: 2em;
@@ -2836,7 +2929,7 @@ transition: all 0.7s ease;
   color: #000;
   font-weight: 600;
   margin: 0 0 1em 0.5em;
-  font-family: 'Roboto Slab', serif;
+  font-family: openSans;
 }
 .event-info2 h4 {
   font-size: 1.2em;
@@ -3904,5 +3997,5 @@ a.button2 {
   overflow: hidden;
   padding: 0.5em 0 0;
 }
->>>>>>> b586ac080d13edf75dd7986ee8f44d0a2b7472b4
+
 }
