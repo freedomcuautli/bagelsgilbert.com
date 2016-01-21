@@ -310,6 +310,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 
 .primer-menu{
 	height:25em;
+	margin-bottom:2em;
 }
 
 .top-menu ul li{
@@ -590,16 +591,20 @@ background: #948963;
 
 .menu-details-grid img {
   width:95%;
-  height:40em;
+  height:55em;
   margin-left:2.55%;
+  margin-bottom:3em;
   /*margin-left:.5em;*/
 }
+
+
+
 .menu-details {
 	position: absolute;
-	margin-left:5%;
-	width: 65%;
-	height:32.5em;
-	top:6.5%;
+	margin-left:4%;
+	width: 70%;
+	height:48.5em;
+	top:3%;
 	left:2%;
 	/*display: none;*/
 	display: block;
@@ -608,13 +613,45 @@ background: #948963;
 	    box-shadow: .375em .375em .525em #231F20;
 }
 
+.menu-details-derecha {
+	position: absolute;
+	text-align:right;
+	margin-right:4%;
+	width: 60%;
+	height:48.5em;
+	top:3%;
+	right:2%;
+	/*display: none;*/
+	display: block;
+	  background: rgba(253, 253, 253, .85);
+	  border-radius: .5em;
+	    box-shadow: -.375em .375em .525em  #231F20;
+}
+
+.breakfast{
+	height: 8em;
+	margin-left: -.25em;
+	width:33.5%;
+	margin-bottom: 1em;
+	
+}
+
+.breakfast-poco{
+	height: 10.5em;
+	margin-left: -.25em;
+	width:30%;
+	margin-bottom: 1.5em;
+	padding-bottom:3em;
+	
+}
+
 .menu-details h4 {
   font-size: 2.75em;
   font-family:openSansBold;
   text-align: center;
   text-transform:uppercase;
   color:#231F20;
-  margin-top:3.5%;
+  margin-top:2.875%;
   padding: 0.125em .5em 0;
   font-weight: 550;
 }
@@ -629,21 +666,71 @@ background: #948963;
  
 }
 .menu-details h5 {
-  font-size: 1.5em;
+  font-size: 1.45em;
   color:#231F20;
-  padding: 0 .25em .25em 0;
+  padding: 0 .25em .125em 0;
   font-stretch:semi-condensed;
   text-transform:uppercase;
   font-family: openSans;
   }
   
   .menu-details p {
-  font-size: 1.25em;
+  font-size: 1.2em;
   color:#231F20;
   font-stretch:semi-condensed;
   /*text-transform:uppercase;*/
   font-family: openSans;
   font-stretch: 
+  }
+  
+  .menu-details-derecha h4 {
+  font-size: 2.75em;
+  font-family:openSansBold;
+  text-align: center;
+  text-transform:uppercase;
+  color:#231F20;
+  margin-top:3.125%;
+  padding: 0.125em .5em 0;
+  font-weight: 550;
+  margin-bottom:.85em;
+}
+.menu-details-derecha h6 {
+  font-size: 1.75em;
+  font-family:openSansBold;
+  text-align: center;
+  text-transform:uppercase;
+  color:#231F20;
+  /*margin-top:3.5%;*/
+  padding: 0 .125em .85em 0;
+ 
+}
+.menu-details-derecha h5 {
+  text-align:left;
+  font-size: 1.45em;
+  color:#231F20;
+  padding: 0 .25em .125em 0;
+  font-stretch:semi-condensed;
+  text-transform:uppercase;
+  font-family: openSans;
+  }
+  
+  .menu-details-derecha p {
+  text-align:left;
+  font-size: 1.2em;
+  color:#231F20;
+  font-stretch:semi-condensed;
+  /*text-transform:uppercase;*/
+  font-family: openSans;
+  font-stretch: 
+  }
+ 
+ .titulo-menu{
+ 	margin-bottom:.8em;
+ }  
+  
+    .footprint p {
+  margin-top:-.5em;
+  text-align:left;
   }
 
 .menu-info {
@@ -1979,7 +2066,7 @@ a.button2 {
 		padding-top:6.75em;
 	}
 	
-	
+	piens
 	.service-section h2 {
 		  margin-top:-.25em;
 		  font-size: 1.225em;
