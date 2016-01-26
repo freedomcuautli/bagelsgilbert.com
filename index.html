@@ -15,7 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Breakfast Gilbert, Best Breask in Gilbert, Bagels Gilbert, Healthy Breakfast, Healthy Lunch, Pastries 
 Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Business, Turkey Sandwich, BLT Sandwich" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,700,800' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 <script src="js/jquery-1.8.3.min.js"></script>
@@ -24,7 +24,6 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript" src="js/map.js"></script>
-<script type="text/javascript" src="js/yelp.js"></script>
  <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
@@ -36,7 +35,8 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
 <!---End-smoth-scrolling---->
 <!------ Light Box ------>
     <link rel="stylesheet" href="css/swipebox.css">
-    <script src="js/jquery.swipebox.min.js"></script> 
+    <script src="js/jquery.swipebox.min.js"></script>
+    
     <script type="text/javascript">
 		jQuery(function($) {
 			$(".swipebox").swipebox();
@@ -44,6 +44,7 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
 	</script>
     <!------ Eng Light Box ------>	
     <script src="js/responsiveslides.min.js"></script>
+    
     <script>
     $(function () {
       $("#slider").responsiveSlides({
@@ -55,7 +56,9 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
       });
     });
   </script>
+ 
   <link rel="stylesheet" type="text/css" href="css/style4.css" />
+ 
 <script type="text/javascript">
 		// Don't use this code on your site
   		var _gaq = _gaq || [];
@@ -67,7 +70,7 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
     			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   		})();
-	</script>
+</script>
 	<!--Animation-->
 <script src="js/wow.min.js"></script>
 <link href="css/animate.css" rel='stylesheet' type='text/css' />
@@ -96,6 +99,7 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
 						 </ul>
 						 <!-- script for menu -->
 							<!--script-nav-->
+
 				 <script>
 				 $("span.menu").click(function(){
 				 $(".top-menu ul").slideToggle("slow" , function(){
@@ -106,20 +110,31 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
 							<!-- //script for menu -->
 		
 								<!-- script-for sticky-nav -->
-								<script>
-				$(document).ready(function() {
-					 var navoffeset=$(".header-bottom").offset().top;
-					 $(window).scroll(function(){
-						var scrollpos=$(window).scrollTop(); 
-						if(scrollpos >=navoffeset){
-							$(".header-bottom").addClass("fixed");
-						}else{
-							$(".header-bottom").removeClass("fixed");
-						}
-					 });
-					 
-				});
+			
+				<script>
+					$(document).ready(function() {
+						 var navoffeset=$(".header-bottom").offset().top;
+						 $(".header-bottom").addClass("fixed");
+/*						 $(window).scroll(function(){
+							var scrollpos=$(window).scrollTop(); 
+							if(scrollpos >=navoffeset){
+								$(".header-bottom").addClass("fixed");
+							}else{
+								$(".header-bottom").removeClass("fixed");
+							}
+						 });
+						 
+						 $(function() {
+							    $('#location').click(function(e) {
+							        $(this).find('iframe').css('pointer-events', 'all');
+							    }).mouseleave(function(e) {
+							        $(this).find('iframe').css('pointer-events', 'none');
+							    });
+						})*/
+						 
+					});
 				</script>
+				
 							<!-- //script-for sticky-nav -->		
 					 </div>
 		
@@ -214,7 +229,7 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
 								<div class="clearfix"></div>
 							</div>
 							
-							<a href="#" class="button1">Check Menu</a>
+							<a href="menu.html" class="button1">Check Menu</a>
 							
 						</div>
 					</div>
@@ -248,9 +263,6 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
 											</div>
 									</div>
 									<div class="clearfix"></div>
-							</div>
-							<div class="butt">
-							<a href="event.html" class="button2">veiw all events</a>
 							</div>
 						</div>
 				</div>
@@ -363,22 +375,25 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
 			<div class="contact-section">
 				<div class="container">
 					<h3>contact us</h3>
-					<div class="contact-grids wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">">
-			<div class="col-md-4 contactgrid">
-				<input type="text" class="text" value=" name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
-				</div>
-				<div class="col-md-4 contactgrid">
-				<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
-				</div>
-				<div class="col-md-4 contactgrid">
-				<input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
-				</div>
-				<div class="col-md-8 contactgrid1">
-				<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
-				</div>
-				<div class="col-md-4 contactgrid2">
-				<input type="button" value="send message">
-			   </div>
+						<div class="col-lg-6 col-sm-5 contact-grids wow fadeInUp delay-05s">
+						        		<form id="contacto" name="contacto" method="post" class="form">
+						                	<input class="input-text required contactgrid" type="text" name="name" value="Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required>
+						                    <input class="input-text contactgrid" type="email" name="email" value="user@domain.com" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required>
+						                	<textarea rows="5" cols="40" class="input-text text-area contactgrid1" name="message" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required>Message *</textarea>
+						                	<input id="submit" name="submit" type="submit" value="Send Message" class="input-btn contactgrid2">
+										</form>
+										<div id="success">
+										  <span>
+										    <p>Message sent Successfully! We will contact you shortly.</p>
+										  </span>
+										</div>
+											
+										<div id="error">
+										  <span>
+										    <p>It was not possible to send the message, please try again later.</p>
+										  </span>
+										</div>
+						</div>
 			   <div class="clearfix"></div>
 				</div>
 				</div>
@@ -414,6 +429,7 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
 							
 						});
 					</script>
+				
 				<a class="scroll" href="#head" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 
@@ -421,3 +437,4 @@ Nutritious, Bagels Tempe, Local Breakfast, Fresh Bagels, Familiy Owned, Local Bu
 				</div>
 </body>
 </html>
+

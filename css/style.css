@@ -186,6 +186,26 @@ ul.callbacks_tabs.callbacks1_tabs {
   background-position: right top;
   right: 0;
  }
+ 
+ #success, #error {
+    display:none
+}
+#success span, #erro span {
+    display:block;
+    position:absolute;
+    top:0;
+    width:100%
+}
+#success span p, #error span p {
+    margin-top:6em
+}
+#success span p {
+  color:#9bd32d;
+}
+#error span p {
+  color:#c0392b;
+}
+ 
 /*-- responsive-mediaquries --*/
 @media(max-width:1024px){
 	.caption {
@@ -642,7 +662,30 @@ background: #948963;
 	width:30%;
 	margin-bottom: 1.5em;
 	padding-bottom:3em;
+	margin-left:2.5%;
 	
+}
+
+.bagelFlavors{
+	height: 21.75em;
+	margin-left: -.25em;
+	width:48%;
+	margin-bottom: 1em;
+	
+}
+
+.bagelFlavors ul{
+	display:inline;
+	width:48%;
+  font-size: 1.2em;
+  color:#231F20;
+  font-stretch:semi-condensed;
+  /*text-transform:uppercase;*/
+  font-family: openSans;
+}
+
+.flavors {
+margin-left:1.75em;
 }
 
 .menu-details h4 {
@@ -732,6 +775,14 @@ background: #948963;
   margin-top:-.5em;
   text-align:left;
   }
+  
+.footPrintFlavors {
+  position:absolute;
+  margin-left:1.5em;
+  text-align:left;
+  bottom:7.5%;
+  }
+
 
 .menu-info {
 	position: absolute;
@@ -765,17 +816,25 @@ background: #948963;
   }
 .events-section {
   padding: 4em 0;
-  background: url("../img/banner1.jpg") no-repeat;
+  background: url("../img/pastries.jpg") no-repeat;
   background-size:cover;
   min-height: 500px;
 }
 .events-section h3 {
-   font-size: 2.5em;
+  font-size: 2.5em;
+  width:13.85%; 
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
   margin: 0 0 1em 0.5em;
   font-family: openSans;
+  background-color: rgba(84, 55, 16, .85);
+  border-radius: .675em;
+  padding: .5em .5em .5em .5em;
+}
+.event-grids {
+  position:relative;
+  padding-top:5%;
 }
 .icon {
   float: left;
@@ -796,8 +855,11 @@ background: #948963;
 }
 .event-info {
   float: left;
-  width: 71%;
+  width: 55%;
   margin-top: 1em;
+  background-color: rgba(84, 55, 16, .60);
+  border-radius: .5em;
+  padding: .5em .5em .5em .5em; 
 }
 .icon1 {
   float: left;
@@ -810,8 +872,11 @@ background: #948963;
 }
 .event-info1 {
   float: left;
-  width: 71%;
+  width: 45%;
   margin-top: 1em;
+  background-color: rgba(84, 55, 16, .85);
+  border-radius: .5em;
+  padding: .5em .5em .5em .5em;
 }
 .event-info h4 {
   font-size: 1.5em;
@@ -972,7 +1037,7 @@ transition: all 0.7s ease;
 }
 .contact-section {
   padding: 4em 0;
-  background: url("../img/banner2.jpg") no-repeat;
+  background: url("../img/contact.jpg") no-repeat;
   background-size:cover;
   min-height: 370px;
  }
@@ -984,10 +1049,8 @@ transition: all 0.7s ease;
    margin: 0 0 1em 0.5em;
     font-family: openSans;
 }
+
 .contactgrid {
- padding-bottom: 2em;
-}
-.contactgrid input[type="text"] {
 	width: 100%;
 	background: none;
 	outline: none;
@@ -996,40 +1059,50 @@ transition: all 0.7s ease;
    font-size: 1.5em;
   color: #d5d6d7;
   text-transform: capitalize;
-  padding: 10px 0;
+  padding-bottom: 2em;
   text-align: left;
 }
 
-.contactgrid1 textarea  {
-	width: 100%;
+.contactgrid1  {
+	position:absolute;
+	margin-top:-6.5em;
+	left:100%;
 	background: none;
 	outline: none;
 	border: none;
-	resize: none;
 	border-bottom: 1px solid#d5d6d7;
 	font-size: 1.5em;
 	color: #d5d6d7;
 	text-transform: capitalize;
-	padding: 10px 0;
-	height: 2.8em;
+	height: 7.5em;
+	
 }
 .contactgrid2 {
   padding: 1em 0 0 12em;
 }
-.contactgrid2 input[type="button"] {
-  color: #543710;
-  background: none;
+
+
+.contactgrid2 {
+  color: #fff;
+  background: #543710;
   border: none;
   font-size: 1.5em;
   outline: none;
   text-transform: uppercase;
   padding: 1em 1em;
   border: 1px solid;
+  margin-top:.5em;
  
 }
-.contactgrid2 input[type="button"]:hover {
-	color: #d5d6d7;
+.contactgrid2:hover {
+	background: #83580F;
 }
+
+.input-text:focus{
+	border:none;
+	border:1px solid#d5d6d7;
+}
+
 .footer-section {
 	background:#312D22;
 	text-align: center;
@@ -1776,8 +1849,25 @@ a.button2 {
   left: 31%;
 }
 .logo a {
-  font-size: 1.8em;
+  position:absolute;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-family: openSans;
+  top:3.25em;
+  left:110%;
 }
+
+.logo a span {
+  position:relative;
+  left:10%;
+}
+
+.callbacks_nav {
+  top: 67.5%;
+  }
+
 .caption h3 {
   font-size: 1.2em;
 }
@@ -1813,7 +1903,7 @@ span.menu {
   z-index: 999;
   position: absolute;
   width: 93%;
-  background:#D84E49;
+  background:#543710;
   text-align: center;
 }
 .top-menu ul li a {
@@ -1833,8 +1923,11 @@ span.menu {
   width: 100%;
 }
 a.button1 {
-  font-size: 0.9em;
- }
+  position:absolute;
+  font-size: 1.25em;
+  margin-left:30%;
+  margin-top:-2.75em;
+   }
 .video iframe {
  
   height: 260px;
@@ -1855,17 +1948,28 @@ a.button1 {
   width: 415px;
   height: 270px;
 }
-.view p {
-  font-size: 12px;
+.view h3 {
+	margin-top:5%;
+  font-size: 1.75em;
   line-height: 1.8em;
+}
+
+.view p {
+  margin-left:4%;
+  font-size: 1.15em;
+  line-height: 1.25em;
 }
 .menu-section {
   padding: 2em 0;
 }
 .menu-grid {
-  float: left;
-  width: 50%;
+  left:-30%;
+  width: 95%;
+  height:80%;
+  padding-bottom:5%;
 }
+
+
 .menu1 {
   margin-top: 0.5em;
 }
@@ -1873,12 +1977,33 @@ a.button1 {
   font-size: 1.2em;
  }
 .menu-info {
-  width: 86.2%;
-  top: 78.4%;
+  width: 87.5%;
+ height:17.5em; 
+  top: 25%;
+  left:6.25%;
 }
+
+.menu-info h4 {
+  position:relative;
+  top: 55%;
+  font-size: 2em;
+  text-align:center;
+}
+.menu-info h5 {
+  position:relative;
+  top: -12.5%;
+  font-size: 2.5em;
+  color: #fff;
+  text-align:center;
+  text-transform:uppercase;
+  font-family: openSansBold;
+  }
+
 .events-section h3 {
   font-size: 1.2em;
+   width:23.5%;
  }
+  
 .icon {
   float: left;
   width: 23%;
@@ -1924,41 +2049,102 @@ a.button2 {
 .test-section h3 {
   font-size: 1.2em;
  }
+ 
+ .test-section h4 {
+  font-size: 1.25em;
+  text-align:right;
+  color: #fff;
+  margin-bottom: 1em;
+  margin-right:1em;
+  font-weight: 600;
+}
+
+.test-section h4 a {
+  font-size: 1em;
+  color:red;
+  margin-bottom: 0.5em;
+}
+  
+.test1 {
+width:30%;
+position:relative;
+overflow:hidden;
+}
+  
 .test1 .textbox {
-  width: 187px;
+  width: 80%;
 }
 .textbox p {
-  padding-top: 4em;
-  font-size: 0.85em;
+	position:relative;
+	padding-top: 2.5em;
+	font-size: 0.85em;
+	margin-left:-1em;
 }
+
+.textbox img {
+	position:relative;
+	width:55%;
+	margin-left:20%;
+}
+
 .textbox h4 {
   font-size: 1.3em;
 }
 .test-right {
-  margin-top: 2em;
+position:relative;
+  margin-top: -19.75%;
+  width:85%;
+  height:8em;
+  margin-left:20%;
 }
+
+.test-left{
+	margin-left:-1.5em;
+}
+
+.test-right01{
+	position:absolute;
+	right:.125%;
+}
+
 .test-left01 {
   
-  margin-top: 2em;
+  margin-top: .5em;
+  
+  position:relative;
+  width:82.5%;
+  height:7.25em;
+  margin-left:-2em;
 }
+  
+
 .test-right h4 {
   font-size: 0.95em;
   height: 17px;
   overflow: hidden;
 }
+
+.test-right h2 {
+  font-size: 1em;
+}
+
 .test-right p {
-  font-size: 0.9em;
-  height: 56px;
+  font-size: 0.7em;
+  height:90%;
   overflow: hidden;
 }
 .test-left01 p {
-  font-size: 0.9em;
-  height: 56px;
+  font-size: 0.7em;
+  height:90%;
   overflow: hidden;
 }
 .test-left01 h4 {
   font-size: 0.95em;
 }
+.test-left01 h2 {
+  font-size: 1em;
+}
+
 .google iframe {
   width: 100%;
   height: 230px;
@@ -1967,21 +2153,54 @@ a.button2 {
   padding: 2em 0;
  }
 .contact-section h3 {
-  font-size: 1.2em;
+  font-size: 1.25em;
  }
 .contactgrid {
-  width: 100%;
+  width: 85%;
   float: none;
  }
- .contactgrid input[type="text"] {
+ .contactgrid  {
   font-size: 0.9em;
 }
-.contactgrid2 input[type="button"] {
+.contactgrid2  {
   font-size: 0.85em;
 }
 .contactgrid {
   padding-bottom: 1em;
 }
+
+.contactgrid1  {
+	position:realtive;
+	margin-top:3.5em;
+	left:2%;
+	background: none;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid#d5d6d7;
+	font-size: .9em;
+	color: #d5d6d7;
+	text-transform: capitalize;
+	height: 5em;
+	margin-left:.5em;
+	
+}
+.contactgrid2 {
+  padding: 1em 0 0 12em;
+}
+
+.contactgrid2 {
+  color: #fff;
+  background: #543710;
+  border: none;
+  font-size: .9em;
+  outline: none;
+  text-transform: uppercase;
+  padding: 1em 1em;
+  border: 1px solid;
+  margin-top:8.5em;
+ 
+}
+
 .footer-section {
   padding: 2em 0;
 }
@@ -2088,7 +2307,171 @@ a.button2 {
 	}
 
 
+.primer-menu{
+	padding-top:3em;
+	margin-top:1em;
+	position:relative;
+	width:35em;
+	height:60em;
+	padding-bottom:5em;
 }
+.menu-details-grid {
+position:relative;
+  width:95%;
+  height:120em;
+  margin-left:-3.5%;
+  margin-top:1em;
+  	padding-bottom:5em;
+  /*margin-left:.5em;*/
+}
+
+
+
+.menu-details-grid img {
+position:relative;
+  width:98.5%;
+height:65em;
+  margin-left:-.75%;
+  margin-top:1em;
+  	padding-bottom:5em;
+  /*margin-left:.5em;*/
+}
+
+
+.menu-details {
+	position: absolute;
+	margin-left:4%;
+	width: 70%;
+	height:57.5em;
+	top:1%;
+	left:2%;
+		padding-bottom:5em;
+	display: inline;
+
+}
+
+
+
+.menu-details-derecha {
+	position: absolute;
+	text-align:right;
+	margin-right:4%;
+	width: 60%;
+	height:57.5em;
+	top:1%;
+	right:2%;
+		padding-bottom:5em;
+
+}
+
+
+.menu-details h4 {
+  font-size: 1.75em;
+  font-weight: 550;
+}
+.menu-details h6 {
+  font-size: 1.25em;
+  margin-bottom:.5em;
+}
+
+
+
+.breakfast{
+	height: 4em;
+	
+	left: .125em;
+	right:.5em;
+	width:103%;
+	margin-bottom: 1em;
+	
+}
+
+
+
+.breakfast-poco{
+	height: 5em;
+	width:100%;
+	margin-bottom: 1.5em;
+	margin-left:.5%;
+	
+}
+
+.bagelFlavors{
+	position:relative;
+	height: 20em;
+	margin-left: -.25em;
+	width:95%;
+	margin-bottom: 1em;
+	
+}
+
+.bagelsFlavors{
+	top:-10.5%;
+	position:relative;
+	height: 20em;
+	margin-left: -.25em;
+	width:95%;
+	margin-bottom: 1em;
+	
+}
+
+
+.bagelFlavors ul{
+	width:48%;
+  font-size: .95em;
+}
+
+.flavors {
+margin-left:1.75em;
+
+}
+
+
+.menu-details h5 {
+  font-size: 1.05em;
+  height:1.35em;
+  }
+  
+  .menu-details p {
+  font-size: .925em;
+  height:1.15em;
+  margin-bottom:.5em;
+  }
+  
+  .menu-details-derecha h4 {
+  font-size: 1.75em;
+}
+.menu-details-derecha h6 {
+  font-size: 1.15em;
+  
+ 
+}
+.menu-details-derecha h5 {
+  text-align:left;
+  font-size: 1.05em;
+
+  }
+  
+  .menu-details-derecha p {
+  text-align:left;
+  font-size: .95em;
+
+  }
+
+.footPrintFlavors {
+  position:relative;
+  left:-1.75%;
+  top:-34.25%;
+  }
+
+
+}
+
+
+
+
+/* ---->  here ends the portrait mobile section <-----  */
+
 @media(max-width:320px){
 .caption {
   top: 41%;

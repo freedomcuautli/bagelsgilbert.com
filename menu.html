@@ -10,7 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Fastfood Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,700,800' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 <script src="js/jquery-1.8.3.min.js"></script>
@@ -18,6 +18,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---- start-smoth-scrolling---->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<!--<script type="text/javascript" src="js/menu.js"></script>-->
  <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
@@ -81,10 +82,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		                     <ul>
 								<nav class="cl-effect-5">
 									 <li><a  href="index.html"><span data-hover="Home">home</span></a></li>
-									 <li><a class="scroll" href="#tests"><span data-hover="about">about</span></a></li>
-									 <li><a class="scroll" href="#events"><span data-hover="what we do">services</span></a></li>
+									 <li><a href="index.html#tests"><span data-hover="About">about</span></a></li>
+									 <li><a href="index.html#events"><span data-hover="what we do">services</span></a></li>
 									 <li><a href="menu.html"><span data-hover="menus">menu</span></a></li>
-									 <li><a class="scroll" href="#location"><span data-hover="location">location</span></a></li>
+									 <li><a href="index.html#location"><span data-hover="location">location</span></a></li>
 							 </nav>
 						 </ul>
 						 <!-- script for menu -->
@@ -99,21 +100,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<!-- //script for menu -->
 		
 								<!-- script-for sticky-nav -->
-								<script>
-				$(document).ready(function() {
-					 var navoffeset=$(".header-bottom").offset().top;
-					 $(window).scroll(function(){
-						var scrollpos=$(window).scrollTop(); 
-						if(scrollpos >=navoffeset){
-							$(".header-bottom").addClass("fixed");
-						}else{
-							$(".header-bottom").removeClass("fixed");
-						}
-					 });
-					 
-				});
-				</script>
-							<!-- //script-for sticky-nav -->		
+								
+								
+				<script>
+					$(document).ready(function() {
+						 var navoffeset=$(".header-bottom").offset().top;
+						 $(".header-bottom").addClass("fixed");
+						 
+					});
+				</script>								
+															
+											<!-- //script-for sticky-nav -->		
 					 </div>
 		
 				</div>
@@ -123,7 +120,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			
 				<div class="menu-section1">
 					<div class="container">
-						<h3> featured menu</h3>
 						<div class="menu-grids wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 							<div class="primer-menu">
 								<div class="col-md-12 menu-details-grid">
@@ -131,28 +127,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  		<div class="menu-details">
 										<h4>Breakfast Sandwiches</h4>
 										<h6>Served All Day</h6>
-										<div class="col-md-4 breakfast">									
+										<div class="col-md-4 col-sm-6 breakfast">									
 											<h5>The Arizona Classic</h5>
 											<p>Two scrambled eggs with your choice of meat and your choice of cheese on a 
 												toasted buttered bagel.</p>
 										</div>
-										<div class="col-md-4 breakfast">
+										<div class="col-md-4 col-sm-6 breakfast">
 											<h5>The Sun Devil</h5>
 											<p>Two scrambled eggs topped with your choice of cheese on a toasted buttered bagel.</p>									
 										</div>
-										<div class="col-md-4 breakfast">
+										<div class="col-md-4 col-sm-6 breakfast">
 											<h5>The Wildcat</h5>
 											<p>Bacon, cream cheese and tomatoes on a toasted bagel.</p>									
 										</div>
-										<div class="col-md-4 breakfast">
+										<div class="col-md-4 col-sm-6 breakfast">
 											<h5>Sedona</h5>
 											<p>Bacon, jalapeño cream cheese and red onions on a toasted bagel.</p>									
 										</div>
-										<div class="col-md-4 breakfast">
+										<div class="col-md-4 col-sm-6 breakfast">
 											<h5>Ranchero</h5>
 											<p>Two scrambled eggs, sausage, red onions and jalapeño cream cheese on a toasted bagel.</p>									
 										</div>
-										<div class="col-md-4 breakfast">
+										<div class="col-md-4 col-sm-6 breakfast">
 											<h5>Meaty Egg White Delight</h5>
 											<p>Three scrambled egg whites with your choice of meat and your choice of cheese
 											   on a toasted bagel</p>									
@@ -214,7 +210,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="col-md-8"></div>
 
 										<div class="col-md-12 footprint">
-											<p>All combos are served with a 20oz size drink or 16oz size coffee, 
+											<p>All combos are served with a 20 oz. size drink or 16 oz. size coffee, 
 												your choice of chips or potato/macaroni salad and a chocolote chip
 												cookie (pickles are optional).</p>			
 												</br>
@@ -261,7 +257,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="col-md-8"></div>
 										<div class="col-md-12 footprint">
-											<p>All combos are served with a 20oz size drink or 16oz size coffee, 
+											<p>All combos are served with a 20 oz. size drink or 16 oz. size coffee, 
 												your choice of chips or potato/macaroni salad and a chocolote chip
 												cookie (pickles are optional).</p>			
 												</br>
@@ -277,39 +273,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  		<div class="menu-details-derecha">
 										<h4>Our Delicious Drinks</h4>
 										<div class="col-md-4 breakfast-poco">									
-											<h5>Combo #1 - Ham Sandwich</h5>
-											<p>Lettuce, tomato and cheddar cheese with mayo and mustard.</p>
+											<h5>House Coffee</h5>
+											<p>Available in two sizes, regular and large.</p>
 										</div>
 										<div class="col-md-4 breakfast-poco">
-											<h5>Combo #2 - Turkey Sandwich</h5>
-											<p>Lettuce,tomato and provolone cheese with Mayo.</p>									
+											<h5>Iced Cofee</h5>
+											<p>Our delicious house coffee "on the rocks".  Available in one size.</p>									
 										</div>
 										<div class="col-md-4 breakfast-poco">
-											<h5>Combo #3 - Veggie Nosh Sandwich</h5>
-											<p>Lettuce, tomato, red onion, cucumber and sprouts with your choice of cream cheese.</p>									
+											<h5>Latte</h5>
+											<p>A classic, made with espresso and steamed milk.  Available in two sizes, regular and large.</p>									
 										</div>
 										<div class="col-md-4 breakfast-poco">
-											<h5>Combo #4 - Southwest Turkey Sandiwch</h5>
-											<p>Lettuce and red onion with roasted red pepper cream cheese.</p>									
+											<h5>Vanilla Latte</h5>
+											<p>Our tasty latte with a touch of vanilla.  Available in two sizes, regular and large.</p>									
 										</div>
 										<div class="col-md-4 breakfast-poco">
-											<h5>Combo #5 - Turkey or Ham Pita</h5>
-											<p>Lettuce, tomato, red onion cucumber and sprouts with your choice of mayo or ranch.</p>									
+											<h5>Mocha</h5>
+											<p>Like a latte, it has espresso and steamed milk, but with added chocolate.  Available in two sizes, regular and large.</p>									
 										</div>
 										<div class="col-md-4 breakfast-poco">
-											<h5>Combo #6 - BLT</h5>
-											<p>Bacon, lettuce, tomato and mayo</p>									
+											<h5>Macchiato</h5>
+											<p>Our espresso coffee with a tiny bit of milk...  Enjoy the foam!. Available in two sizes, regular and large.</p>									
 										</div>
 										<div class="col-md-4 breakfast-poco">
-											<h5>Combo #7 - Chicken or Tuna Salad Sandwich</h5>
-											<p>Lettuce, tomato and cucumber.</p>									
+											<h5>Iced Latte or Mocha</h5>
+											<p>Your choice of regular, double americano or triple americano.  Available in one size.</p>									
 										</div>
 										<div class="col-md-8"></div>
 
 										<div class="col-md-12 footprint">
-											<p>All combos are served with a 20oz size drink or 16oz size coffee, 
-												your choice of chips or potato/macaroni salad and a chocolote chip
-												cookie (pickles are optional).</p>			
+											<p>All iced drinks are served in a 20 oz. cup.</p>			
 												</br>
 										</div>
 									</div>
@@ -319,67 +313,82 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="primer-menu">
 								<div class="col-md-12 menu-details-grid">
-									<img src="img/specialCombo.jpg" class="img-responsive" alt="" />
+									<img src="img/bagelFlavors.jpg" class="img-responsive" alt="" />
 							  		<div class="menu-details">
-										<h4>Breakfast Sandwiches</h4>
-										<h6>Served All Day</h6>
-										<div class="col-md-4 breakfast">									
-											<h5>The Arizona Classic</h5>
-											<p>Two scrambled eggs with your choice of meat and your choice of cheese on a 
-												toasted buttered bagel.</p>
+										<h4>Bagels, Toppings and Cream Cheese</h4>
+										<h6>Our Bagels Are Baked Fresh Every Morning</h6>
+										<div class="col-md-6 bagelFlavors">																	
+											<h5>Bagel Flavors</h5>
+											<div class='row flavors'>
+	                        					<ul class='col-md-6 col-sm-6 col-xs-6'>
+													<li>Plain</li>
+													<li>Cinnamon Sugar</li>
+													<li>Cinnamon Raisin</li>
+													<li>Blueberry</li>
+													<li>Apple Crunch</li>
+													<li>Chocolate Chip</li>
+													<li>Whole Wheat</li>
+													<li>Jalapeño Cheddar</li>
+													<li>Everything</li>
+													<li>Sesame Seed</li>
+													<li>Garlic</li>
+												</ul>
+	                        					<ul class='col-md-6 col-sm-6 col-xs-6'>
+													<li>Onion</li>
+													<li>Poppy Seed</li>
+													<li>Kosher Salt</li>
+													<li>Asiago</li>
+													<li>Multi-grain</li>
+													<li>Pumpernickel</li>
+													<li>White Russian</li>
+													<li>Freanch Toast</li>
+													<li>Jalapeño</li>
+													<li>Hawaiian</li>
+												</ul>
+											</div>
 										</div>
-										<div class="col-md-4 breakfast">
-											<h5>The Sun Devil</h5>
-											<p>Two scrambled eggs topped with your choice of cheese on a toasted buttered bagel.</p>									
+										<div class="col-md-6 bagelFlavors">
+											<h5>Cream Cheese Flavors</h5>
+											<div class='row flavors'>
+	                        					<ul class='col-md-6 col-md-6 col-sm-6 col-xs-6'>
+													<li>Classic Plain</li>
+													<li>Plain Lite</li>
+													<li>Strawberry</li>
+													<li>Blueberry</li>
+													<li>Honey Nut</li>
+													<li>Cinammon Sugar</li>
+													<li>Veggie</li>
+													<li>Veggie Lite</li>
+													<li>Chive</li>
+												</ul>
+	                        					<ul class='col-md-6 col-md-6 col-sm-6 col-xs-6'>
+													<li>Jalapeño</li>
+													<li>Roated Red Pepper</li>
+													<li>Lox Cream Cheese</li>
+												</ul>
+											</div>						
 										</div>
-										<div class="col-md-4 breakfast">
-											<h5>The Wildcat</h5>
-											<p>Bacon, cream cheese and tomatoes on a toasted bagel.</p>									
+										<div class="col-md-6 bagelsFlavors">
+											<h5>Bagel Toppings</h5>
+											<div class='row flavors'>
+												<ul class='col-md-6 col-md-6 col-sm-6 col-xs-6'>
+													<li>Cream Cheese</li>
+													<li>Butter</li>
+													<li>Peanut butter</li>
+													<li>Honey</li>
+												</ul>
+												<ul  class='col-md-6 col-md-6 col-sm-6 col-xs-6'>
+													<li>Cinnamon Sugar</li>
+													<li>Jelly</li>
+													<li>Combine any two</li>
+												</ul>
+											</div>
 										</div>
-										<div class="col-md-4 breakfast">
-											<h5>Sedona</h5>
-											<p>Bacon, jalapeño cream cheese and red onions on a toasted bagel.</p>									
-										</div>
-										<div class="col-md-4 breakfast">
-											<h5>Ranchero</h5>
-											<p>Two scrambled eggs, sausage, red onions and jalapeño cream cheese on a toasted bagel.</p>									
-										</div>
-										<div class="col-md-4 breakfast">
-											<h5>Meaty Egg White Delight</h5>
-											<p>Three scrambled egg whites with your choice of meat and your choice of cheese
-											   on a toasted bagel</p>									
-										</div>
-										<div class="col-md-4 breakfast">
-											<h5>Egg White Delight</h5>
-											<p>Three scrambled egg whites topped with your choice of cheese on a toasted bagel.</p>									
-										</div>
-										<div class="col-md-4 breakfast">
-											<h5>Nova Lox</h5>
-											<p>Lox with cream cheese, red onions and tomatoes on a toasted bagel.  Capers are optional.</p>									
-										</div>
-										<div class="col-md-4 breakfast">
-											<h5>Scramble Bowl</h5>
-											<p>Two scrambled eggs with your choice of meat, and your choice of cheese, tomato, red onions and hash brown.  Side of salsa included.</p>									
-										</div>
-										<div class="col-md-4 breakfast">
-											<h5>Egg White Scramble Bowl</h5>
-											<p>Three scrambled egg whites with your choice of meat and your choice of cheese, tomato, red onions, hash brown and a side of salsa.</p>									
-										</div>
+										<p class="footPrintFlavors">Topping combinations cost slightly more than individual toppings.</p>
 									</div>
 	
 									</div>
 									<div class="clearfix"></div>
-								</div>
-								<div class="bottom-menu">
-									<div class="col-md-3 menu-grid">
-										<img src="images/img1.jpg" class="img-responsive" alt="" />
-										<div class="menu-info">
-											<h4>$04.<sup>99</sup></h4>
-											<h5>CUM SOCIIS NATOQUE .</h5>
-											</div>
-										</div>
-
-								<div class="clearfix"></div>
 								</div>
 								<div class="clearfix"></div>
 							</div>
